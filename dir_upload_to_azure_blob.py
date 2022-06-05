@@ -1,3 +1,4 @@
+# below function can be used to upload folder and sub-folders from local to Container in Azure Blob Storage
 from azure.storage.blob import BlobServiceClient
 import os
 # Install the following package before running this program
@@ -9,7 +10,7 @@ def upload_data_to_adls():
     :return:
     """
     # Azure Storage connection string
-    connect_str = "DefaultEndpointsProtocol=https;AccountName=rkdatalakestorageaccount;AccountKey=VucHl2AZHK5fGsIeVyOvwO7w1z3NXK9dh1MidauzYz6aE+Hq9MKnRpHKanpnzEOBW8bdWwpZPYas+ASt69T7cA==;EndpointSuffix=core.windows.net"
+    connect_str = ""
     # Name of the Azure container
     container_name = "data"
     # The path to be removed from the local directory path while uploading it to ADLS
